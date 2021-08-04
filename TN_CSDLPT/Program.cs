@@ -30,7 +30,7 @@ namespace TN_CSDLPT
         public static String passwordDN = "";
         public static String mGroup = "";
         public static String mHoten = "";
-        public static int mCoSo = 0;
+        public static int mCoSo;
 
         public static BindingSource bds_dspm = new BindingSource();  // giữ bdsPM khi đăng nhập
         public static frmMain frmChinh;

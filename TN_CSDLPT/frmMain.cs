@@ -22,7 +22,7 @@ namespace TN_CSDLPT
             //btnDDH.Enabled = btnPN.Enabled = btnPX.Enabled = btnCungCap.Enabled = false;
             //btnINDSNV.Enabled = btnINDSMH.Enabled = btnBKNX.Enabled = btnBKTC.Enabled = false;
             btnDangXuat.Enabled = btnTaoTK.Enabled= btnMonHoc.Enabled = false;           
-        }
+        }         
 
         private Form CheckExists(Type ftype)
         {
@@ -99,6 +99,78 @@ namespace TN_CSDLPT
             else
             {
                 frmTaoTK f = new frmTaoTK();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
+
+        private void btnGV_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(frmKhoa));
+            if (frm != null) frm.Activate();
+            else
+            {
+                frmKhoa f = new frmKhoa();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
+
+        private void btnLop_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(frmLop));
+            if (frm != null) frm.Activate();
+            else
+            {
+                frmLop f = new frmLop();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
+
+        private void btnBoDe_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(frmNhapDe));
+            if (frm != null) frm.Activate();
+            else
+            {
+                frmNhapDe f = new frmNhapDe();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
+
+        private void btnCBT_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(frmChuanBiThi));
+            if (frm != null) frm.Activate();
+            else
+            {
+                frmChuanBiThi f = new frmChuanBiThi();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
+
+        private void btnThi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(frmThi));
+            if (frm != null) frm.Activate();
+            else
+            {
+                frmThi f = new frmThi();
+                f.MdiParent = this;
+                f.Show();
+            }
+        }
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            Form frm = this.CheckExists(typeof(frmBDMH));
+            if (frm != null) frm.Activate();
+            else
+            {
+                frmBDMH f = new frmBDMH();
                 f.MdiParent = this;
                 f.Show();
             }
