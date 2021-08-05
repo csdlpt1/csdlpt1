@@ -53,7 +53,7 @@ namespace TN_CSDLPT
             // 
             tENCNLabel.AutoSize = true;
             tENCNLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            tENCNLabel.Location = new System.Drawing.Point(185, 77);
+            tENCNLabel.Location = new System.Drawing.Point(172, 100);
             tENCNLabel.Name = "tENCNLabel";
             tENCNLabel.Size = new System.Drawing.Size(102, 22);
             tENCNLabel.TabIndex = 1;
@@ -85,7 +85,7 @@ namespace TN_CSDLPT
             this.tENCNComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.tENCNComboBox.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tENCNComboBox.FormattingEnabled = true;
-            this.tENCNComboBox.Location = new System.Drawing.Point(311, 74);
+            this.tENCNComboBox.Location = new System.Drawing.Point(298, 97);
             this.tENCNComboBox.Name = "tENCNComboBox";
             this.tENCNComboBox.Size = new System.Drawing.Size(289, 30);
             this.tENCNComboBox.TabIndex = 2;
@@ -95,7 +95,7 @@ namespace TN_CSDLPT
             // 
             this.rdSV.AutoSize = true;
             this.rdSV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdSV.Location = new System.Drawing.Point(495, 128);
+            this.rdSV.Location = new System.Drawing.Point(482, 151);
             this.rdSV.Name = "rdSV";
             this.rdSV.Size = new System.Drawing.Size(105, 26);
             this.rdSV.TabIndex = 17;
@@ -108,7 +108,7 @@ namespace TN_CSDLPT
             // 
             this.rdGV.AutoSize = true;
             this.rdGV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdGV.Location = new System.Drawing.Point(335, 128);
+            this.rdGV.Location = new System.Drawing.Point(322, 151);
             this.rdGV.Name = "rdGV";
             this.rdGV.Size = new System.Drawing.Size(109, 26);
             this.rdGV.TabIndex = 16;
@@ -121,9 +121,9 @@ namespace TN_CSDLPT
             // 
             this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(495, 287);
+            this.btnThoat.Location = new System.Drawing.Point(473, 310);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(107, 35);
+            this.btnThoat.Size = new System.Drawing.Size(114, 47);
             this.btnThoat.TabIndex = 15;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -132,9 +132,9 @@ namespace TN_CSDLPT
             // btnDangNhap
             // 
             this.btnDangNhap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.Location = new System.Drawing.Point(312, 287);
+            this.btnDangNhap.Location = new System.Drawing.Point(299, 310);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(107, 35);
+            this.btnDangNhap.Size = new System.Drawing.Size(113, 46);
             this.btnDangNhap.TabIndex = 14;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.UseVisualStyleBackColor = true;
@@ -143,7 +143,7 @@ namespace TN_CSDLPT
             // txtPass
             // 
             this.txtPass.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(311, 234);
+            this.txtPass.Location = new System.Drawing.Point(298, 257);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(291, 30);
@@ -152,7 +152,7 @@ namespace TN_CSDLPT
             // txtLogin
             // 
             this.txtLogin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLogin.Location = new System.Drawing.Point(311, 170);
+            this.txtLogin.Location = new System.Drawing.Point(298, 193);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(291, 30);
             this.txtLogin.TabIndex = 12;
@@ -161,7 +161,7 @@ namespace TN_CSDLPT
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(199, 237);
+            this.label3.Location = new System.Drawing.Point(186, 260);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 22);
             this.label3.TabIndex = 11;
@@ -171,7 +171,7 @@ namespace TN_CSDLPT
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(199, 173);
+            this.label2.Location = new System.Drawing.Point(186, 196);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 22);
             this.label2.TabIndex = 10;
@@ -181,7 +181,7 @@ namespace TN_CSDLPT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(845, 531);
             this.Controls.Add(this.rdSV);
             this.Controls.Add(this.rdGV);
             this.Controls.Add(this.btnThoat);

@@ -41,7 +41,6 @@ namespace TN_CSDLPT
             this.lOPBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnBATĐAU = new System.Windows.Forms.Button();
-            this.cmbMH = new System.Windows.Forms.ComboBox();
             this.mONHOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtHoTen = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -61,6 +60,7 @@ namespace TN_CSDLPT
             this.colTHOIGIAN = new DevExpress.XtraGrid.Columns.GridColumn();
             this.mONHOCTableAdapter = new TN_CSDLPT.DSTableAdapters.MONHOCTableAdapter();
             this.lOPTableAdapter = new TN_CSDLPT.DSTableAdapters.LOPTableAdapter();
+            this.txtMH = new DevExpress.XtraEditors.TextEdit();
             mAMHLabel = new System.Windows.Forms.Label();
             mALOPLabel = new System.Windows.Forms.Label();
             tENLOPLabel = new System.Windows.Forms.Label();
@@ -74,6 +74,7 @@ namespace TN_CSDLPT
             ((System.ComponentModel.ISupportInitialize)(this.txtTenLop.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsGV_DK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMH.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // mAMHLabel
@@ -114,10 +115,10 @@ namespace TN_CSDLPT
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtMH);
             this.panel1.Controls.Add(this.cmbLOP);
             this.panel1.Controls.Add(this.btnThoat);
             this.panel1.Controls.Add(this.btnBATĐAU);
-            this.panel1.Controls.Add(this.cmbMH);
             this.panel1.Controls.Add(this.txtHoTen);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(lANLabel);
@@ -178,18 +179,6 @@ namespace TN_CSDLPT
             this.btnBATĐAU.Text = "BẮT ĐẦU THI";
             this.btnBATĐAU.UseVisualStyleBackColor = true;
             this.btnBATĐAU.Click += new System.EventHandler(this.btnBATĐAU_Click);
-            // 
-            // cmbMH
-            // 
-            this.cmbMH.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsGVDK, "MAMH", true));
-            this.cmbMH.DataSource = this.mONHOCBindingSource;
-            this.cmbMH.DisplayMember = "TENMH";
-            this.cmbMH.FormattingEnabled = true;
-            this.cmbMH.Location = new System.Drawing.Point(1006, 60);
-            this.cmbMH.Name = "cmbMH";
-            this.cmbMH.Size = new System.Drawing.Size(323, 30);
-            this.cmbMH.TabIndex = 10;
-            this.cmbMH.ValueMember = "MAMH";
             // 
             // mONHOCBindingSource
             // 
@@ -374,6 +363,14 @@ namespace TN_CSDLPT
             // 
             this.lOPTableAdapter.ClearBeforeFill = true;
             // 
+            // txtMH
+            // 
+            this.txtMH.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bdsGVDK, "MAMH", true));
+            this.txtMH.Location = new System.Drawing.Point(1006, 61);
+            this.txtMH.Name = "txtMH";
+            this.txtMH.Size = new System.Drawing.Size(125, 22);
+            this.txtMH.TabIndex = 24;
+            // 
             // frmThi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
@@ -397,6 +394,7 @@ namespace TN_CSDLPT
             ((System.ComponentModel.ISupportInitialize)(this.txtTenLop.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsGV_DK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtMH.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -426,9 +424,9 @@ namespace TN_CSDLPT
         private DevExpress.XtraEditors.TextEdit txtTenLop;
         private System.Windows.Forms.TextBox txtHoTen;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cmbMH;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnBATĐAU;
         private System.Windows.Forms.ComboBox cmbLOP;
+        private DevExpress.XtraEditors.TextEdit txtMH;
     }
 }

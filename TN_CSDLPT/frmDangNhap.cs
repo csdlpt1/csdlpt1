@@ -94,17 +94,25 @@ namespace TN_CSDLPT
                 {
                     Program.mHoten = Program.myReader.GetString(0);
                 }
-                catch (Exception EX)
+                catch (Exception)
                 {
                     MessageBox.Show("Không tồn tại sinh viên này", "", MessageBoxButtons.OK);
                     return;
                 }
-
                 Program.mGroup = "SINHVIEN";
+                Program.frmChinh = new frmMain();
+                Program.frmChinh.Activate();
+                Program.frmChinh.Show();
+                Program.frmDN.Visible = false;
+
+
+               
                 Program.frmChinh.MA.Text = "Mã: " + Program.username;
                 Program.frmChinh.HOTEN.Text = "Họ và Tên: " + Program.mHoten;
                 Program.frmChinh.NHOM.Text = "Nhóm: " + Program.mGroup;
                 Program.conn.Close();
+
+                
             }
             else
             {
@@ -138,6 +146,11 @@ namespace TN_CSDLPT
                 Program.myReader.Close();
                 Program.conn.Close();
 
+                Program.frmChinh = new frmMain();
+                Program.frmChinh.Activate();
+                Program.frmChinh.Show();
+                Program.frmDN.Visible = false;
+
                 if (Program.mGroup != "SINHVIEN")
                 {
                     Program.frmChinh.MA.Text = "Mã: " + Program.username;
@@ -153,8 +166,7 @@ namespace TN_CSDLPT
             Program.myReader.Close();
             Program.conn.Close();
             Program.frmChinh.Show();
-            Program.frmChinh.btnDangXuat.Enabled = Program.frmChinh.btnTaoTK.Enabled = Program.frmChinh.btnMonHoc.Enabled = true;
-            Program.frmChinh.btnDangNhap.Enabled = false;
+            
         }
     }
 }

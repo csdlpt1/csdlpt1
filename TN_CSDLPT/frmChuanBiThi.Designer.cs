@@ -111,7 +111,7 @@ namespace TN_CSDLPT
             // 
             tHOIGIANLabel.AutoSize = true;
             tHOIGIANLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            tHOIGIANLabel.Location = new System.Drawing.Point(117, 542);
+            tHOIGIANLabel.Location = new System.Drawing.Point(120, 478);
             tHOIGIANLabel.Name = "tHOIGIANLabel";
             tHOIGIANLabel.Size = new System.Drawing.Size(97, 22);
             tHOIGIANLabel.TabIndex = 30;
@@ -121,7 +121,7 @@ namespace TN_CSDLPT
             // 
             sOCAUTHILabel.AutoSize = true;
             sOCAUTHILabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            sOCAUTHILabel.Location = new System.Drawing.Point(109, 479);
+            sOCAUTHILabel.Location = new System.Drawing.Point(112, 415);
             sOCAUTHILabel.Name = "sOCAUTHILabel";
             sOCAUTHILabel.Size = new System.Drawing.Size(105, 22);
             sOCAUTHILabel.TabIndex = 28;
@@ -131,7 +131,7 @@ namespace TN_CSDLPT
             // 
             lANLabel.AutoSize = true;
             lANLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            lANLabel.Location = new System.Drawing.Point(169, 416);
+            lANLabel.Location = new System.Drawing.Point(172, 352);
             lANLabel.Name = "lANLabel";
             lANLabel.Size = new System.Drawing.Size(45, 22);
             lANLabel.TabIndex = 26;
@@ -141,7 +141,7 @@ namespace TN_CSDLPT
             // 
             nGAYTHILabel.AutoSize = true;
             nGAYTHILabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            nGAYTHILabel.Location = new System.Drawing.Point(125, 356);
+            nGAYTHILabel.Location = new System.Drawing.Point(128, 292);
             nGAYTHILabel.Name = "nGAYTHILabel";
             nGAYTHILabel.Size = new System.Drawing.Size(89, 22);
             nGAYTHILabel.TabIndex = 24;
@@ -151,7 +151,7 @@ namespace TN_CSDLPT
             // 
             tRINHDOLabel.AutoSize = true;
             tRINHDOLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            tRINHDOLabel.Location = new System.Drawing.Point(127, 287);
+            tRINHDOLabel.Location = new System.Drawing.Point(130, 225);
             tRINHDOLabel.Name = "tRINHDOLabel";
             tRINHDOLabel.Size = new System.Drawing.Size(87, 22);
             tRINHDOLabel.TabIndex = 22;
@@ -161,7 +161,7 @@ namespace TN_CSDLPT
             // 
             mALOPLabel.AutoSize = true;
             mALOPLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            mALOPLabel.Location = new System.Drawing.Point(135, 214);
+            mALOPLabel.Location = new System.Drawing.Point(138, 168);
             mALOPLabel.Name = "mALOPLabel";
             mALOPLabel.Size = new System.Drawing.Size(79, 22);
             mALOPLabel.TabIndex = 20;
@@ -171,7 +171,7 @@ namespace TN_CSDLPT
             // 
             mAMHLabel.AutoSize = true;
             mAMHLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            mAMHLabel.Location = new System.Drawing.Point(93, 148);
+            mAMHLabel.Location = new System.Drawing.Point(96, 110);
             mAMHLabel.Name = "mAMHLabel";
             mAMHLabel.Size = new System.Drawing.Size(121, 22);
             mAMHLabel.TabIndex = 18;
@@ -181,7 +181,7 @@ namespace TN_CSDLPT
             // 
             mAGVLabel.AutoSize = true;
             mAGVLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            mAGVLabel.Location = new System.Drawing.Point(79, 76);
+            mAGVLabel.Location = new System.Drawing.Point(82, 55);
             mAGVLabel.Name = "mAGVLabel";
             mAGVLabel.Size = new System.Drawing.Size(135, 22);
             mAGVLabel.TabIndex = 16;
@@ -193,7 +193,7 @@ namespace TN_CSDLPT
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 36);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(614, 636);
+            this.panel1.Size = new System.Drawing.Size(548, 574);
             this.panel1.TabIndex = 0;
             // 
             // grbGVDK
@@ -217,7 +217,7 @@ namespace TN_CSDLPT
             this.grbGVDK.Dock = System.Windows.Forms.DockStyle.Fill;
             this.grbGVDK.Location = new System.Drawing.Point(0, 0);
             this.grbGVDK.Name = "grbGVDK";
-            this.grbGVDK.Size = new System.Drawing.Size(614, 636);
+            this.grbGVDK.Size = new System.Drawing.Size(548, 574);
             this.grbGVDK.TabIndex = 0;
             this.grbGVDK.Text = "groupControl1";
             // 
@@ -225,10 +225,10 @@ namespace TN_CSDLPT
             // 
             this.cmbMaMH.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.bdsGVDK, "MAMH", true));
             this.cmbMaMH.DataSource = this.bdsMonHoc;
-            this.cmbMaMH.DisplayMember = "TENMH";
+            this.cmbMaMH.DisplayMember = "MAMH";
             this.cmbMaMH.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMaMH.FormattingEnabled = true;
-            this.cmbMaMH.Location = new System.Drawing.Point(220, 145);
+            this.cmbMaMH.Location = new System.Drawing.Point(223, 107);
             this.cmbMaMH.Name = "cmbMaMH";
             this.cmbMaMH.Size = new System.Drawing.Size(304, 30);
             this.cmbMaMH.TabIndex = 32;
@@ -257,7 +257,7 @@ namespace TN_CSDLPT
             0,
             0,
             0});
-            this.seThoiGian.Location = new System.Drawing.Point(220, 536);
+            this.seThoiGian.Location = new System.Drawing.Point(223, 472);
             this.seThoiGian.Name = "seThoiGian";
             this.seThoiGian.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.seThoiGian.Properties.Appearance.Options.UseFont = true;
@@ -289,7 +289,7 @@ namespace TN_CSDLPT
             0,
             0,
             0});
-            this.seSoCau.Location = new System.Drawing.Point(220, 476);
+            this.seSoCau.Location = new System.Drawing.Point(223, 412);
             this.seSoCau.Name = "seSoCau";
             this.seSoCau.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.seSoCau.Properties.Appearance.Options.UseFont = true;
@@ -321,7 +321,7 @@ namespace TN_CSDLPT
             0,
             0,
             0});
-            this.seLan.Location = new System.Drawing.Point(220, 413);
+            this.seLan.Location = new System.Drawing.Point(223, 349);
             this.seLan.Name = "seLan";
             this.seLan.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.seLan.Properties.Appearance.Options.UseFont = true;
@@ -346,7 +346,7 @@ namespace TN_CSDLPT
             this.dateNgayThi.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.bdsGVDK, "NGAYTHI", true));
             this.dateNgayThi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateNgayThi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateNgayThi.Location = new System.Drawing.Point(220, 350);
+            this.dateNgayThi.Location = new System.Drawing.Point(223, 286);
             this.dateNgayThi.Name = "dateNgayThi";
             this.dateNgayThi.Size = new System.Drawing.Size(217, 30);
             this.dateNgayThi.TabIndex = 25;
@@ -360,7 +360,7 @@ namespace TN_CSDLPT
             "A",
             "B",
             "C"});
-            this.cmbTrinhDo.Location = new System.Drawing.Point(220, 284);
+            this.cmbTrinhDo.Location = new System.Drawing.Point(223, 222);
             this.cmbTrinhDo.Name = "cmbTrinhDo";
             this.cmbTrinhDo.Size = new System.Drawing.Size(304, 30);
             this.cmbTrinhDo.TabIndex = 23;
@@ -372,7 +372,7 @@ namespace TN_CSDLPT
             this.cmbMaLop.DisplayMember = "TENLOP";
             this.cmbMaLop.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMaLop.FormattingEnabled = true;
-            this.cmbMaLop.Location = new System.Drawing.Point(220, 211);
+            this.cmbMaLop.Location = new System.Drawing.Point(223, 165);
             this.cmbMaLop.Name = "cmbMaLop";
             this.cmbMaLop.Size = new System.Drawing.Size(304, 30);
             this.cmbMaLop.TabIndex = 21;
@@ -390,7 +390,7 @@ namespace TN_CSDLPT
             this.cmbMaGV.DisplayMember = "MAGV";
             this.cmbMaGV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbMaGV.FormattingEnabled = true;
-            this.cmbMaGV.Location = new System.Drawing.Point(220, 73);
+            this.cmbMaGV.Location = new System.Drawing.Point(223, 52);
             this.cmbMaGV.Name = "cmbMaGV";
             this.cmbMaGV.Size = new System.Drawing.Size(304, 30);
             this.cmbMaGV.TabIndex = 17;
@@ -424,10 +424,10 @@ namespace TN_CSDLPT
             // 
             this.gIAOVIEN_DANGKYGridControl.DataSource = this.bdsGVDK;
             this.gIAOVIEN_DANGKYGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gIAOVIEN_DANGKYGridControl.Location = new System.Drawing.Point(614, 36);
+            this.gIAOVIEN_DANGKYGridControl.Location = new System.Drawing.Point(548, 36);
             this.gIAOVIEN_DANGKYGridControl.MainView = this.gridView1;
             this.gIAOVIEN_DANGKYGridControl.Name = "gIAOVIEN_DANGKYGridControl";
-            this.gIAOVIEN_DANGKYGridControl.Size = new System.Drawing.Size(832, 636);
+            this.gIAOVIEN_DANGKYGridControl.Size = new System.Drawing.Size(898, 574);
             this.gIAOVIEN_DANGKYGridControl.TabIndex = 2;
             this.gIAOVIEN_DANGKYGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -650,7 +650,7 @@ namespace TN_CSDLPT
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 672);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 610);
             this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Size = new System.Drawing.Size(1446, 24);
             // 
@@ -660,7 +660,7 @@ namespace TN_CSDLPT
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 36);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 636);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 574);
             // 
             // barDockControlRight
             // 
@@ -668,7 +668,7 @@ namespace TN_CSDLPT
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.barDockControlRight.Location = new System.Drawing.Point(1446, 36);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 636);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 574);
             // 
             // barButtonItem3
             // 
@@ -680,7 +680,7 @@ namespace TN_CSDLPT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1446, 696);
+            this.ClientSize = new System.Drawing.Size(1446, 634);
             this.Controls.Add(this.gIAOVIEN_DANGKYGridControl);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.barDockControlLeft);

@@ -44,6 +44,7 @@ namespace TN_CSDLPT
             {
                 rdCoSo.Enabled = rdTruong.Enabled = false;
             }
+            
         }
 
         private void rdTruong_CheckedChanged(object sender, EventArgs e)

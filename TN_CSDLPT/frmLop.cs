@@ -59,7 +59,7 @@ namespace TN_CSDLPT
             {
                 btnThem.Enabled = btnSua.Enabled = btnXoa.Enabled = btnGhi.Enabled = btnUndo.Enabled = false;
                 btnReload.Enabled = true;
-                grbLop.Enabled = false;
+                grbLop.Enabled = btnSuaSV.Enabled = btnThemSV.Enabled = btnXoaSV.Enabled = false;
             }           
         }
 

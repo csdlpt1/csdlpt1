@@ -42,7 +42,9 @@ namespace TN_CSDLPT
         {
             rpBangDiemMonHoc report = new rpBangDiemMonHoc(this.cmbMaLop.SelectedValue.ToString(), 
                         this.cmbMaMH.SelectedValue.ToString(), Int32.Parse(this.txtLanThi.Text.ToString()));
-            
+            report.xtTenLop.Text = cmbMaLop.Text;
+            report.xtTenMH.Text = cmbMaMH.Text;
+            report.xtLanThi.Text = txtLanThi.Text;
 
             ReportPrintTool print = new ReportPrintTool(report);
             MessageBox.Show(cmbMaLop.Text);

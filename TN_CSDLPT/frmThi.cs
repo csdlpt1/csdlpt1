@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace TN_CSDLPT
 {
@@ -37,7 +37,7 @@ namespace TN_CSDLPT
             this.mONHOCTableAdapter.Fill(this.dS.MONHOC);
             // TODO: This line of code loads data into the 'dS.GIAOVIEN_DANGKY' table. You can move, or remove it, as needed.
             this.gIAOVIEN_DANGKYTableAdapter.Connection.ConnectionString = Program.connstr;
-            this.gIAOVIEN_DANGKYTableAdapter.Fill(this.dS.GIAOVIEN_DANGKY);
+            this.gIAOVIEN_DANGKYTableAdapter.Fill(this.dS.GIAOVIEN_DANGKY);        
 
             if (Program.mGroup == "SINHVIEN")
             {
@@ -58,7 +58,7 @@ namespace TN_CSDLPT
             if (Program.mGroup == "SINHVIEN")
             {
                 string strLenh = "DECLARE @result int " +
-                            "EXEC @result = SP_KTDATHI '" + Program.username + "', N'" + cmbMH.SelectedValue.ToString() + "', '" + seLanThi.Value + "' " +
+                            "EXEC @result = SP_KTDATHI '" + Program.username + "', N'" + txtMH.Text + "', '" + seLanThi.Value + "' " +
                             " SELECT 'result' = @result";
                 Program.myReader = Program.ExecSqlDataReader(strLenh);
                 if (Program.myReader == null) return false;
@@ -80,25 +80,28 @@ namespace TN_CSDLPT
                 MessageBox.Show("Sinh viên đã hoàn thành kỳ thi này!", "", MessageBoxButtons.OK);
                 return;
             }
-            string date = ((DataRowView)bdsGVDK[bdsGVDK.Position])["NGAYTHI"].ToString();
-            string[] temp = date.Split(' ');
-            if (DateTime.ParseExact(temp[0], "dd/MM/yyyy", CultureInfo.InvariantCulture) < DateTime.Today)
-            {
-                MessageBox.Show("Kỳ thi này đã kết thúc!", "", MessageBoxButtons.OK);
-                return;
-            }
-            if (DateTime.ParseExact(temp[0], "dd/MM/yyyy", CultureInfo.InvariantCulture) > DateTime.Today)
-            {
-                MessageBox.Show("Kỳ thi này chưa bắt đầu!", "", MessageBoxButtons.OK);
-                return;
-            }
+            //string date = ((DataRowView)bdsGVDK[bdsGVDK.Position])["NGAYTHI"].ToString();
+            //string[] temp = date.Split(' ');
+            //MessageBox.Show(DateTime.Today.ToString());
+            //MessageBox.Show(date.ToString());
+
+            //if (DateTime.ParseExact(temp[0], "dd-MM-yyyy", CultureInfo.InvariantCulture) < DateTime.Today)
+            //{
+            //    MessageBox.Show("Kỳ thi này đã kết thúc!", "", MessageBoxButtons.OK);
+            //    return;
+            //}
+            //if (DateTime.ParseExact(temp[0], "dd-MM-yyyy", CultureInfo.InvariantCulture) > DateTime.Today)
+            //{
+            //    MessageBox.Show("Kỳ thi này chưa bắt đầu!", "", MessageBoxButtons.OK);
+            //    return;
+            //}
             else
             {
                 frmLamBaiThi l = new frmLamBaiThi();
                 l.tenSV = txtHoTen.Text;
                 l.maLop = cmbLOP.Text;
                 l.tenLop = txtTenLop.Text;
-                l.maMH = cmbMH.SelectedValue.ToString();
+                l.maMH = txtMH.Text;
                 l.lan = seLanThi.Value;
                 l.trinhDo = ((DataRowView)bdsGVDK[bdsGVDK.Position])["TRINHDO"].ToString();
                 l.soCau = int.Parse(((DataRowView)bdsGVDK[bdsGVDK.Position])["SOCAUTHI"].ToString());

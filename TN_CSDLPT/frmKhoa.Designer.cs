@@ -109,7 +109,7 @@ namespace TN_CSDLPT
             // 
             mAKHLabel.AutoSize = true;
             mAKHLabel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            mAKHLabel.Location = new System.Drawing.Point(264, 92);
+            mAKHLabel.Location = new System.Drawing.Point(124, 66);
             mAKHLabel.Name = "mAKHLabel";
             mAKHLabel.Size = new System.Drawing.Size(89, 22);
             mAKHLabel.TabIndex = 0;
@@ -119,7 +119,7 @@ namespace TN_CSDLPT
             // 
             TenKhoa.AutoSize = true;
             TenKhoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            TenKhoa.Location = new System.Drawing.Point(260, 180);
+            TenKhoa.Location = new System.Drawing.Point(120, 135);
             TenKhoa.Name = "TenKhoa";
             TenKhoa.Size = new System.Drawing.Size(93, 22);
             TenKhoa.TabIndex = 2;
@@ -129,7 +129,7 @@ namespace TN_CSDLPT
             // 
             MaCS.AutoSize = true;
             MaCS.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            MaCS.Location = new System.Drawing.Point(255, 265);
+            MaCS.Location = new System.Drawing.Point(115, 208);
             MaCS.Name = "MaCS";
             MaCS.Size = new System.Drawing.Size(98, 22);
             MaCS.TabIndex = 4;
@@ -240,15 +240,15 @@ namespace TN_CSDLPT
             this.barDockControl2.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControl2.Location = new System.Drawing.Point(0, 0);
             this.barDockControl2.Manager = this.barManager1;
-            this.barDockControl2.Size = new System.Drawing.Size(1924, 36);
+            this.barDockControl2.Size = new System.Drawing.Size(1433, 36);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 1028);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 646);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1924, 24);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1433, 24);
             // 
             // barDockControlLeft
             // 
@@ -256,15 +256,15 @@ namespace TN_CSDLPT
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 36);
             this.barDockControlLeft.Manager = this.barManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 992);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 610);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1924, 36);
+            this.barDockControlRight.Location = new System.Drawing.Point(1433, 36);
             this.barDockControlRight.Manager = this.barManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 992);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 610);
             // 
             // barButtonItem1
             // 
@@ -279,7 +279,7 @@ namespace TN_CSDLPT
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelControl1.Location = new System.Drawing.Point(0, 36);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1924, 383);
+            this.panelControl1.Size = new System.Drawing.Size(1433, 288);
             this.panelControl1.TabIndex = 4;
             // 
             // grbKhoa
@@ -291,16 +291,16 @@ namespace TN_CSDLPT
             this.grbKhoa.Controls.Add(mAKHLabel);
             this.grbKhoa.Controls.Add(this.txtMaKhoa);
             this.grbKhoa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbKhoa.Location = new System.Drawing.Point(1056, 2);
+            this.grbKhoa.Location = new System.Drawing.Point(823, 2);
             this.grbKhoa.Name = "grbKhoa";
-            this.grbKhoa.Size = new System.Drawing.Size(866, 379);
+            this.grbKhoa.Size = new System.Drawing.Size(608, 284);
             this.grbKhoa.TabIndex = 1;
             this.grbKhoa.Text = "Thông Tin Khoa";
             // 
             // txtMaCS
             // 
             this.txtMaCS.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bdsKhoa, "MACS", true));
-            this.txtMaCS.Location = new System.Drawing.Point(359, 262);
+            this.txtMaCS.Location = new System.Drawing.Point(219, 205);
             this.txtMaCS.MenuManager = this.barManager1;
             this.txtMaCS.Name = "txtMaCS";
             this.txtMaCS.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -321,7 +321,7 @@ namespace TN_CSDLPT
             // txtTenKhoa
             // 
             this.txtTenKhoa.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bdsKhoa, "TENKH", true));
-            this.txtTenKhoa.Location = new System.Drawing.Point(359, 177);
+            this.txtTenKhoa.Location = new System.Drawing.Point(219, 132);
             this.txtTenKhoa.MenuManager = this.barManager1;
             this.txtTenKhoa.Name = "txtTenKhoa";
             this.txtTenKhoa.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -332,7 +332,7 @@ namespace TN_CSDLPT
             // txtMaKhoa
             // 
             this.txtMaKhoa.DataBindings.Add(new System.Windows.Forms.Binding("EditValue", this.bdsKhoa, "MAKH", true));
-            this.txtMaKhoa.Location = new System.Drawing.Point(359, 89);
+            this.txtMaKhoa.Location = new System.Drawing.Point(219, 63);
             this.txtMaKhoa.MenuManager = this.barManager1;
             this.txtMaKhoa.Name = "txtMaKhoa";
             this.txtMaKhoa.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -348,7 +348,7 @@ namespace TN_CSDLPT
             this.kHOAGridControl.MainView = this.gridView1;
             this.kHOAGridControl.MenuManager = this.barManager1;
             this.kHOAGridControl.Name = "kHOAGridControl";
-            this.kHOAGridControl.Size = new System.Drawing.Size(1054, 379);
+            this.kHOAGridControl.Size = new System.Drawing.Size(821, 284);
             this.kHOAGridControl.TabIndex = 0;
             this.kHOAGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -437,11 +437,11 @@ namespace TN_CSDLPT
             // 
             this.gIAOVIENGridControl.DataSource = this.bdsGV;
             this.gIAOVIENGridControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gIAOVIENGridControl.Location = new System.Drawing.Point(0, 419);
+            this.gIAOVIENGridControl.Location = new System.Drawing.Point(0, 324);
             this.gIAOVIENGridControl.MainView = this.gridView2;
             this.gIAOVIENGridControl.MenuManager = this.barManager1;
             this.gIAOVIENGridControl.Name = "gIAOVIENGridControl";
-            this.gIAOVIENGridControl.Size = new System.Drawing.Size(1924, 609);
+            this.gIAOVIENGridControl.Size = new System.Drawing.Size(1433, 322);
             this.gIAOVIENGridControl.TabIndex = 5;
             this.gIAOVIENGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -556,7 +556,7 @@ namespace TN_CSDLPT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1052);
+            this.ClientSize = new System.Drawing.Size(1433, 670);
             this.ContextMenuStrip = this.contextMenuStrip1;
             this.Controls.Add(this.gIAOVIENGridControl);
             this.Controls.Add(this.panelControl1);

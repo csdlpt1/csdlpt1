@@ -21,8 +21,26 @@ namespace TN_CSDLPT
             //btnLoaiHang.Enabled = btnNCC.Enabled = btnKho.Enabled = btnKhachHang.Enabled = false;
             //btnDDH.Enabled = btnPN.Enabled = btnPX.Enabled = btnCungCap.Enabled = false;
             //btnINDSNV.Enabled = btnINDSMH.Enabled = btnBKNX.Enabled = btnBKTC.Enabled = false;
-            btnDangXuat.Enabled = btnTaoTK.Enabled= btnMonHoc.Enabled = false;           
-        }         
+            
+                btnTaoTK.Enabled = btnMonHoc.Enabled = btnLop.Enabled = btnKhoa.Enabled = btnCBT.Enabled = btnBoDe.Enabled = btnThi.Enabled =false;
+
+            if(Program.mGroup == "SINHVIEN")
+            {
+                btnThi.Enabled = true;
+            }
+            if (Program.mGroup == "COSO")
+            {
+                btnTaoTK.Enabled = btnMonHoc.Enabled = btnLop.Enabled = btnKhoa.Enabled = btnCBT.Enabled = btnBoDe.Enabled = true;
+            }
+            if (Program.mGroup == "GIAOVIEN")
+            {
+                btnCBT.Enabled = btnBoDe.Enabled = btnThi.Enabled = true;
+            }
+            if (Program.mGroup == "TRUONG")
+            {
+                btnTaoTK.Enabled = btnMonHoc.Enabled = btnLop.Enabled = btnKhoa.Enabled = btnCBT.Enabled = btnBoDe.Enabled = true;
+            }
+        }
 
         private Form CheckExists(Type ftype)
         {
@@ -174,6 +192,11 @@ namespace TN_CSDLPT
                 f.MdiParent = this;
                 f.Show();
             }
+        }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

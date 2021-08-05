@@ -34,6 +34,8 @@ namespace TN_CSDLPT
 
         public static BindingSource bds_dspm = new BindingSource();  // giữ bdsPM khi đăng nhập
         public static frmMain frmChinh;
+        
+        public static frmDangNhap frmDN;
 
         public static int KetNoi()
         {
@@ -109,8 +111,8 @@ namespace TN_CSDLPT
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            frmChinh = new frmMain();
-            Application.Run(frmChinh);
+            frmDN = new frmDangNhap();
+            Application.Run(frmDN);
         }
     }
 }
